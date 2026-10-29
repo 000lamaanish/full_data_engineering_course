@@ -1,0 +1,16 @@
+# pull base image for python
+FROM python:3.8-slim
+
+# set working directory in the image
+WORKDIR /app
+
+# # copy the requirements file into the image
+# COPY requirements.txt /app/requirements.txt
+# alternnative method copy everything into the workdir
+copy . /app
+
+# install the requirement dependencies from the requirements file
+RUN pip install --no-cache-dir -r requirements.txt
+
+# run the application
+cmd ["python","app.py"]
