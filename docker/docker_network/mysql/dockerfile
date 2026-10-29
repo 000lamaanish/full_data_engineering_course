@@ -2,8 +2,8 @@
 FROM mysql:8.0
 
 # set the emvironment variable for mysql
-ENV MYSQL_ROOT_PASSWORD = demopass
-ENV MYSQL_DATABASE = demodb
+ENV MYSQL_ROOT_PASSWORD=demopass
+ENV MYSQL_DATABASE=demodb
 
 # COPY THE INITIALIZATION SCRIPT IN THE DOCKER IMAGE
 COPY init.sql /docker-entrypoint-initdb.d/
