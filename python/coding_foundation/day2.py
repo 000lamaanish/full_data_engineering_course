@@ -1,18 +1,19 @@
 # largest number
 
-a=2
+a=4
 b=4
 c=3
-
-def numsize(a,b,c):
-    if a>b and a>c:
-        print('a is the largest')
-    elif b>a and b>c:
-        print('b is largest')
+def find_largest(a, b, c):
+    # Use >= so that ties are naturally included
+    if a >= b and a >= c:
+        print(f"The largest number is a: {a}")
+    elif b >= a and b >= c:
+        print(f"The largest number is b: {b}")
     else:
-        print('c is largest') 
+        print(f"The largest number is c: {c}")
 
-numsize(a,b,c)
+# Testing your example:
+find_largest(a,b,c)
 
 
 # grade calcullator
@@ -20,11 +21,13 @@ numsize(a,b,c)
 marks=int(input('enter the marks of a student:'))
 
 def grade_callculator(marks):
-    if marks >= 90 and marks==100:
+    if marks<0 or marks>100:
+        print('invalid')
+    elif marks >= 90 and marks<=100:
         print('A')
     elif marks >=80:
         print('B')
-    elif marks >70:
+    elif marks >=70:
         print('c')
     elif marks>=60:
         print('D')
