@@ -1,0 +1,7 @@
+order_id,customer_name,email,amount,order_date,status
+101,Ram Sharma, RAM@GMAIL.COM ,500,2026-10-01, COMPLETED
+102,Sita Thapa,sita@gmail.com,750,2026-10-02,completed
+103,Hari Gurung,hari@gmail.com,-200,2026-10-03,completed
+104,Anita Rai,anita@gmail.com,1200,2026-10-04,pending
+105,Krishna KC,,900,2026-10-05,completed
+106,John Doe,john@gmail.com,1500,2026-10-06,completed
