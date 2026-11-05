@@ -1,15 +1,15 @@
-# # Write a Python program that prints numbers from 1 to 50 using a for loop.
-# for i in range(1,51):
-#     print(i)
-#     i+=1
+# Write a Python program that prints numbers from 1 to 50 using a for loop.
+for i in range(1,51):
+    print(i)
+    i+=1
 
 
 
-# # 4
-# n=int(input("enter the number:"))
-# for i in range(1,11):
-#     multiplication=n*i
-#     print(f'{n}*{i}={multiplication}')
+# 4
+n=int(input("enter the number:"))
+for i in range(1,11):
+    multiplication=n*i
+    print(f'{n}*{i}={multiplication}')
 
 # 2
 for i in range(1,101):
